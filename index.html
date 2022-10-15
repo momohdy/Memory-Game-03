@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/memoryGame.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@700&family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="control-buttons">
+        <span class="rounded-pill">Start Game</span>
+    </div>
+    <div class="info">
+      <div class="container hello">
+        <div class="name d-inline">Hello : <span> </span></div>
+        <div class="tries d-inline">Wrong Tries : <span>0</span> </div>
+      </div>
+    </div>
+    <div class="memory-game-blocks d-flex ">
+      <div class="game-block" data-animal="monkey">
+        <div class="face front"></div>
+        <div class="face back" >
+          <img src="images/monkey.jpg" alt="image" />
+        </div>
+      </div>
+      <div class="game-block" data-animal="monkey">
+        <div class="face front"></div>
+        <div class="face back" >
+          <img src="images/monkey.jpg" alt="image" />
+        </div>
+      </div>
+      <div class="game-block" data-animal="dab3">
+        <div class="face front"></div>
+        <div class="face back" >
+          <img src="images/dab3.jpg" alt="image" />
+        </div>
+      </div>
+      <div class="game-block" data-animal="dab3">
+        <div class="face front"></div>
+        <div class="face back" >
+          <img src="images/dab3.jpg" alt="image" />
+        </div>
+      </div>
+      <div class="game-block" data-animal="montana">
+        <div class="face front"></div>
+        <div class="face back" >
+          <img src="images/montana.jpg" alt="image" />
+        </div>
+      </div>
+      <div class="game-block" data-animal="montana">
+        <div class="face front"></div>
+        <div class="face back" >
+          <img src="images/montana.jpg" alt="image" />
+        </div>
+      </div>
+      <div class="game-block" data-animal="cat-on-soor">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/cat-on-soor.jpg" alt="image" />
+        </div>
+      </div>
+      <div class="game-block" data-animal="cat-on-soor">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/cat-on-soor.jpg" alt="image" />
+        </div>
+      </div>
+      <div class="game-block" data-animal="cat-me4ammada">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/cat-me4ammada.jpg" alt="image" />
+        </div>
+      </div>
+      <div class="game-block" data-animal="cat-me4ammada">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/cat-me4ammada.jpg" alt="image" />
+        </div>
+      </div>
+      <div class="game-block" data-animal="dob-2otby">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/dob-2otby.jpg" alt="image" />
+        </div>
+      </div>
+      <div class="game-block" data-animal="dob-2otby">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/dob-2otby.jpg" alt="image" />
+        </div>
+      </div>
+      <div class="game-block" data-animal="cat-lion">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/cat-lion.jpg" alt="image" />
+        </div>
+      </div>
+      <div class="game-block" data-animal="cat-lion">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/cat-lion.jpg" alt="image" />
+        </div>
+      </div>
+      <div class="game-block" data-animal="dog">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/dog.jpg" alt="image" />
+        </div>
+      </div>
+      <div class="game-block" data-animal="dog">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/dog.jpg" alt="image" />
+        </div>
+      </div>
+      <div class="game-block" data-animal="wolf">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/wolf.jpg" alt="image" />
+        </div>
+      </div>
+      <div class="game-block" data-animal="wolf">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/wolf.jpg" alt="image" />
+        </div>
+      </div>
+      <div class="game-block" data-animal="zebra">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/zebra.jpg" alt="image" />
+        </div>
+      </div>
+      <div class="game-block" data-animal="zebra">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/zebra.jpg" alt="image" />
+        </div>
+      </div>
+    </div>
+    <audio id="succes" src="audios/succes.wav"  preload="auto"></audio>
+    <audio id="fail" src="audios/fail.mp3" preload="auto"></audio>
+    <!-- <audio id="during" src="memoryGame.mp3"  preload="auto"></audio> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/memoryGame.js"></script>
+  </body>
+</html>
